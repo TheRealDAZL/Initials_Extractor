@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            char[] AUTORIZED_SYMBOLS = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'À', 'Â', 'Ä', 'Ç', 'É', 'È', 'Ê', 'Ë', 'Î', 'Ï', 'Ô', 'Ö', 'Ù', 'Û', 'Ü', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ' ', '-', '\'' };
+            char[] AUTORIZED_CHARACTERS = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'À', 'Â', 'Ä', 'Ç', 'É', 'È', 'Ê', 'Ë', 'Î', 'Ï', 'Ô', 'Ö', 'Ù', 'Û', 'Ü', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ' ', '-', '\'' };
             string initials = "";
 
             while (initials == "")
@@ -21,7 +21,7 @@
                 {
                     char character = originalText[position];
 
-                    if (AUTORIZED_SYMBOLS.Contains(character))
+                    if (AUTORIZED_CHARACTERS.Contains(character))
                     {
                         if (character != ' ' && character != '-' && character != '\'')
                         {
