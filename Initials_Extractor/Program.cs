@@ -17,10 +17,8 @@
 
                 string originalText = Console.ReadLine().Trim('-', '\'', ' ').ToUpper();
 
-                for (int position = 0; position < originalText.Length; position++)
+                foreach (char character in originalText)
                 {
-                    char character = originalText[position];
-
                     if (AUTORIZED_CHARACTERS.Contains(character))
                     {
                         if (character != ' ' && character != '-' && character != '\'')
